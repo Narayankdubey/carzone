@@ -15,6 +15,11 @@ function ProtectedRoutes() {
       title: "Home",
     },
     {
+      path: "*",
+      component: Home,
+      title: "Home",
+    },
+    {
       path: "/services",
       component: Services,
       title: "Services",
@@ -34,7 +39,12 @@ function ProtectedRoutes() {
     <Routes>
       {routes.map((data, index) => {
         return (
-          <Route path={data.path} element={<data.component />} key={index} />
+          <Route
+            exact
+            path={data.path}
+            element={<data.component />}
+            key={index}
+          />
         );
       })}
     </Routes>
