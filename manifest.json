@@ -1,0 +1,15 @@
+{
+  "short_name": "Car Zone",
+  "name": "Car Zone Patna",
+  "icons": [
+    {
+      "src": "https://scontent.fpat3-3.fna.fbcdn.net/v/t1.6435-9/107900752_112183293901989_1118250393734898886_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=nauHvPg5Kh0AX_01Z_r&_nc_ht=scontent.fpat3-3.fna&oh=00_AT-2YSaC0W1CTU_aTCh8T_pKjhOemdSgx07akmUeqo5xTw&oe=628A5430",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

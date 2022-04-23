@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/carzone/static/css/main.0b4e74b4.css",
+    "main.js": "/carzone/static/js/main.027d80af.js",
+    "index.html": "/carzone/index.html",
+    "main.0b4e74b4.css.map": "/carzone/static/css/main.0b4e74b4.css.map",
+    "main.027d80af.js.map": "/carzone/static/js/main.027d80af.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b4e74b4.css",
+    "static/js/main.027d80af.js"
+  ]
+}
