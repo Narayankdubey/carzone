@@ -1,6 +1,8 @@
 import React from "react";
 import { Tabs, Tab } from "react-bootstrap";
 
+import Sell from "../Sell/Index";
+
 const Home = () => {
   return (
     <div>
@@ -13,7 +15,7 @@ const Home = () => {
           <h1>Buy here</h1>
         </Tab>
         <Tab eventKey="sell" title="Sell">
-          <h1>Sell here</h1>
+          <Sell />
         </Tab>
       </Tabs>
     </div>

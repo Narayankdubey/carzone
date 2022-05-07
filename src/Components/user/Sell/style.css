@@ -1,0 +1,30 @@
+.sell-card {
+  width: 90%;
+  max-width: 900px;
+}
+.sell-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sell-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sell-form > * {
+  width: 48%;
+  max-width: 500px;
+}
+.submit-btn-container{
+    width: 100%;
+    
+}
+
+@media screen and (max-width: 725px) {
+  .sell-form > * {
+    width: 100%;
+    max-width: none;
+  }
+}
