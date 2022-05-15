@@ -1,0 +1,6 @@
+.sell-product-container > * {
+  /* margin: auto; */
+  margin-top: 25px;
+  /* width: 90%; */
+  max-width: 400px;
+}

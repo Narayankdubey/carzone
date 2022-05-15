@@ -2,6 +2,7 @@ import React from "react";
 import { Tabs, Tab } from "react-bootstrap";
 
 import Sell from "../Sell/Index";
+import Buy from "../Buy/Index";
 
 const Home = () => {
   return (
@@ -12,7 +13,7 @@ const Home = () => {
         className="mb-3 nav-justified"
       >
         <Tab eventKey="buy" title="Buy">
-          <h1>Buy here</h1>
+          <Buy />
         </Tab>
         <Tab eventKey="sell" title="Sell">
           <Sell />
