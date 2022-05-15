@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/carzone/static/css/main.fec786b0.css",
-    "main.js": "/carzone/static/js/main.1caf08f2.js",
+    "main.css": "/carzone/static/css/main.d60d0230.css",
+    "main.js": "/carzone/static/js/main.66d779d3.js",
     "index.html": "/carzone/index.html",
-    "main.fec786b0.css.map": "/carzone/static/css/main.fec786b0.css.map",
-    "main.1caf08f2.js.map": "/carzone/static/js/main.1caf08f2.js.map"
+    "main.d60d0230.css.map": "/carzone/static/css/main.d60d0230.css.map",
+    "main.66d779d3.js.map": "/carzone/static/js/main.66d779d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.fec786b0.css",
-    "static/js/main.1caf08f2.js"
+    "static/css/main.d60d0230.css",
+    "static/js/main.66d779d3.js"
   ]
 }
