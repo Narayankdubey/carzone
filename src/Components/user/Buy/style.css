@@ -4,3 +4,41 @@
   /* width: 90%; */
   max-width: 400px;
 }
+.search-filter-container {
+  width: 90%;
+  display: flex;
+  position: sticky;
+  top: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.search-container {
+  width: 60%;
+  margin-right: 0 !important;
+}
+.sort-filter-container {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sort-filter-container > * {
+  width: 48%;
+}
+
+@media screen and (max-width: 825px) {
+  .search-filter-container {
+    flex-direction: column;
+  }
+  .search-filter-container > * {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  /* .sort-filter-container > * {
+    width: 48%;
+  } */
+}
