@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Card, Button, Form, FormControl } from "react-bootstrap";
 import { SortAlphaDown, Funnel } from "react-bootstrap-icons";
 
 import "./style.css";
 
 const Buy = () => {
+  const [scroll, setScroll] = useState("");
+
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        setScroll("scrollStyle");
+      } else {
+        setScroll("");
+      }
+    });
+  });
   return (
     <div
       className="sell-container"
       style={{ display: "flex", flexDirection: "column" }}
     >
-      <div className="search-filter-container">
-        <Form className="d-flex search-container" >
+      <div className={`search-filter-container ${scroll}`}>
+        <Form className="d-flex search-container">
           <FormControl
             type="search"
             placeholder="Search"
@@ -829,18 +840,9 @@ const Buy = () => {
         </Card>
       </div>
       <div
-        className="filter-sort-container"
+        className="filter-sort-container-mobile"
         style={{
-          width: "100%",
-          height: "50px",
-          padding: "5px",
-          position: "sticky",
-          bottom: 0,
-          display: "flex",
-          justifyContent: "space-around",
-          alignItems: "center",
-          backgroundColor: "orange",
-          color: "white",
+          
         }}
       >
         <SortAlphaDown />
