@@ -25,19 +25,24 @@ const Buy = () => {
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
+      if (window.scrollY > 130) {
+        if (scrollValue > window.scrollY) {
+          setHideUtil("showUtil");
+        } else {
+          setHideUtil("hideUtil");
+        }
+      }
       if (scrollValue > window.scrollY) {
-        setHideUtil("showUtil");
         setHideSortFilter("hideSortFilter");
       } else {
-        setHideUtil("hideUtil");
         setHideSortFilter("showSortFilter");
       }
-      setScrollValue(window.scrollY);
       if (window.scrollY > 100) {
         setScroll("scrollStyle");
       } else {
         setScroll("");
       }
+      setScrollValue(window.scrollY);
     });
   });
 
