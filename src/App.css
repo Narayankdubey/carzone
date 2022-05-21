@@ -2,3 +2,13 @@
   border-bottom-color: transparent;
   background-color: Yellow;
 }
+
+.width48 {
+  width: 48%;
+}
+.item-center {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

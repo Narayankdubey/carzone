@@ -7,3 +7,9 @@ html {
   box-sizing: border-box;
   transition: 0.5s;
 }
+html,
+body,
+#root,
+.App {
+  height: 100%;
+}
