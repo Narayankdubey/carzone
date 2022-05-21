@@ -33,7 +33,7 @@ const Buy = () => {
         setHideSortFilter("showSortFilter");
       }
       setScrollValue(window.scrollY);
-      if (scrollValue > 100) {
+      if (window.scrollY > 100) {
         setScroll("scrollStyle");
       } else {
         setScroll("");
