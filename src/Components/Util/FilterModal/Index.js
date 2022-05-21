@@ -68,9 +68,7 @@ const FilterModal = ({ showFilterModal, matches, handleFilterModalClose }) => {
       <Modal.Footer
         style={{ display: "flex", justifyContent: "space-between" }}
       >
-        <Button variant="outline" onClick={handleFilterModalClose}>
-          0 Product Filtered
-        </Button>
+        <p>0 Product Filtered</p>
         <Button variant="primary" onClick={handleFilterModalClose}>
           Apply
         </Button>

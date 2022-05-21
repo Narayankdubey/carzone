@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { Card, Button, Form, FormControl, Modal } from "react-bootstrap";
-import { SortAlphaDown, Funnel } from "react-bootstrap-icons";
+import {
+  Card,
+  Button,
+  Form,
+  FormControl,
+  Modal,
+  InputGroup,
+} from "react-bootstrap";
+import { SortAlphaDown, Funnel, Search } from "react-bootstrap-icons";
 
 import "./style.css";
 import FilterModal from "../../Util/FilterModal/Index";
@@ -77,12 +84,16 @@ const Buy = () => {
       />
       <div className={`search-filter-container ${scroll} ${hideUtil}`}>
         <Form className="d-flex search-container">
-          <FormControl
-            type="search"
-            placeholder="Search"
-            className="me-2"
-            aria-label="Search"
-          />
+          <InputGroup>
+            <FormControl
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <Button variant="outline-secondary">
+              <Search />
+            </Button>
+          </InputGroup>
         </Form>
         <div className="sort-filter-container">
           <Button variant="outline-dark" onClick={handleSortModal}>
@@ -890,14 +901,14 @@ const Buy = () => {
       </div>
       <div className={`filter-sort-container-mobile ${hideSortFilter}`}>
         <div
-          className="width48 below-sort-container item-center"
+          className="width48 below-sort-container item-center pointer"
           onClick={handleSortModal}
         >
           <SortAlphaDown />
         </div>
         <div className="below-divider"></div>
         <div
-          className="width48 below-filter-container item-center"
+          className="width48 below-filter-container item-center pointer"
           onClick={handleFilterModal}
         >
           <Funnel />

@@ -40,12 +40,14 @@
   align-items: center;
   background-color: orange;
   color: white;
+  box-shadow: 0px 0px 5px rgb(116, 88, 37);
 }
 .below-divider {
   height: 100%;
   width: 2px;
   background-color: rgb(236, 232, 232);
 }
+
 .scrollStyle {
   width: 100%;
   padding: 10px;
